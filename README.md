@@ -28,10 +28,10 @@ This is to showcase my projects from the Data Analyst course I have taken on Jul
 
 ## Tableau Dashboards:
 Spotify Dashboard:
-<img width="1592" height="837" alt="image" src="https://github.com/user-attachments/assets/733ed07c-9ca8-4508-99ff-164ca1d472f0" />
+<img width="1600" height="800" alt="image" src="https://github.com/user-attachments/assets/733ed07c-9ca8-4508-99ff-164ca1d472f0" />
 
 Gapminder Dashboard:
-<img width="1627" height="792" alt="image" src="https://github.com/user-attachments/assets/4338cd82-03fd-4c60-aadc-51d897ef8f73" />
+<img width="1600" height="800" alt="image" src="https://github.com/user-attachments/assets/4338cd82-03fd-4c60-aadc-51d897ef8f73" />
 
 ## Python Code with Visuals:
 Box Plot:
