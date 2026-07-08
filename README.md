@@ -1,4 +1,4 @@
-## Hi! My name is Sabrin Yussuf.
+## Hello! My name is Sabrin Yussuf.
 This repository is to showcase my projects from the Data Analyst course I have taken on July 2026.
 
 ## What I have learnt:
@@ -9,6 +9,10 @@ This repository is to showcase my projects from the Data Analyst course I have t
 - SQL/MYSQL Workbench - Explored database querying, filtering and data management techniques using SQL
   
 - Python/ Google Colab - Applied Python for data cleaning, analysis and visualisation within the Google Colab environment
+
+<img width="1300" height="463" alt="data analytics toolkit" src="https://github.com/user-attachments/assets/22bb2832-1c90-4cdf-a719-ff9fd3bf1701" />
+
+  
 
 
 ## Projects I have completed:
@@ -23,8 +27,19 @@ This repository is to showcase my projects from the Data Analyst course I have t
 - Python - Utilised Python libraries to import, clean, transform, analyse and export data, supporting efficient data processing and exploratory analysis
 
 ## Tableau Dashboards:
+Spotify Dashboard:
 <img width="1592" height="837" alt="image" src="https://github.com/user-attachments/assets/733ed07c-9ca8-4508-99ff-164ca1d472f0" />
 
+Gapminder Dashboard:
 <img width="1627" height="792" alt="image" src="https://github.com/user-attachments/assets/4338cd82-03fd-4c60-aadc-51d897ef8f73" />
+
+## Python Code with Visuals:
+Box Plot:
+<img width="1201" height="715" alt="image" src="https://github.com/user-attachments/assets/3a54897c-36f5-4474-9396-a44121eecc40" />
+
+Count Plot: 
+<img width="1076" height="643" alt="image" src="https://github.com/user-attachments/assets/42fd12b7-9bb3-4d6d-b155-771b3e32c14f" />
+
+
 
 
