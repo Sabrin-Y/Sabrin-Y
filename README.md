@@ -1,5 +1,5 @@
 ## Hello! My name is Sabrin Yussuf.
-This repository is to showcase my projects from the Data Analyst course I have taken on July 2026.
+This is to showcase my projects from the Data Analyst course I have taken on July 2026.
 
 ## What I have learnt:
 - Excel and Data basics - Explored how Excel can be used to organise data and create visualisations to support analysis and decision-making
