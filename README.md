@@ -1,4 +1,4 @@
-## Hello! My name is Sabrin Yussuf.
+## Data Analysis Portfolio!
 
 This is to showcase my projects from the Data Analyst course I have taken on July 2026.
 <br>
