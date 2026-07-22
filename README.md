@@ -45,6 +45,10 @@ This Tableau dashboard explores music streaming data to uncover trends in genre 
 
 <img src="https://github.com/user-attachments/assets/733ed07c-9ca8-4508-99ff-164ca1d472f0" alt="image" width="100%">
 
+View the interactive Tableau dashboard here:
+
+🔗 [Spotify Dashboard](https://prod-uk-a.online.tableau.com/#/site/sabriin6-771615adb3/workbooks/3556079/views)
+
 <br>
 <br>
 <br>
@@ -55,6 +59,11 @@ This Tableau dashboard analyses global health and demographic data, focusing on 
 
 <img src="https://github.com/user-attachments/assets/4338cd82-03fd-4c60-aadc-51d897ef8f73" alt="image" width="100%">
 
+## Interactive Tableau Dashboard
+
+View the interactive Tableau dashboard here:
+
+🔗 [Global Health Dashboard](https://prod-uk-a.online.tableau.com/#/site/sabriin6-771615adb3/workbooks/3556129?:origin=card_share_link)
 <br>
 <br>
 <br>
