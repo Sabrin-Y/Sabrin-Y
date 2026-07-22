@@ -47,7 +47,7 @@ This Tableau dashboard explores music streaming data to uncover trends in genre 
 
 View the interactive Tableau dashboard here:
 
-🔗 [Spotify Dashboard](https://prod-uk-a.online.tableau.com/#/site/sabriin6-771615adb3/workbooks/3556079/views)
+🔗 [Spotify Dashboard](https://prod-uk-a.online.tableau.com/#/site/sabriin6-771615adb3/workbooks/3556079?:origin=card_share_link)
 
 <br>
 <br>
