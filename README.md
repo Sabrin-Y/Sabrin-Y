@@ -68,6 +68,17 @@ View the interactive Tableau dashboard here:
 <br>
 <br>
 
+## PowerBI Dashboard 
+
+This Power BI dashboard provides an interactive overview of retail sales performance. It displays key performance indicators (KPIs), including total sales, profit, quantity sold, and total orders. Users can analyse sales by region, customer segment, product category, and sub-category, while the map visual highlights sales across different countries. The monthly sales trend chart helps identify changes in sales performance over time, enabling users to monitor trends and make data-driven business decisions.
+
+## Interactive PowerBI Dashboard
+🔗 [Retail Sales Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYzNkZTUxMTktMTdjOS00YTk5LWI1NzEtODIxOGVkNmM2M2NiIiwidCI6IjNlYTdjMTI4LWM2MDEtNDQ3OS1hMDAzLWUxNGQwMGMwYjVjYiJ9)
+
+<br>
+<br>
+<br>
+
 ## Python Code with Visuals:
 
 Box Plot:
