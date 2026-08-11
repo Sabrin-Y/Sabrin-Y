@@ -1,11 +1,29 @@
-## Data Analysis Portfolio!
+## Welcome to My Data Portfolio
 
-This is to showcase my projects from the Data Analyst course I have taken on July 2026.
+My name is Sabrin Yussuf! I recently completed a Level 3 Data Technician Bootcamp, where I developed practical skills across data analysis, visualisation, databases and programming.
+
+This portfolio showcases the skills I developed throughout my training, along with the projects I completed using Excel, Tableau, Power BI, SQL, MySQL and Python.
+
+Explore my portfolio to see how I’ve applied these tools to real-world datasets and transformed data into meaningful insights.
+
 <br>
 <br>
 <br>
 
-## What I have learnt:
+## About Me!
+
+I’m an aspiring Data Analyst and recent Level 3 Data Technician graduate, with hands-on experience working with data across Excel, Tableau, Power BI, SQL and Python.
+
+Throughout my training, I developed my skills progressively — starting with the fundamentals of working with data in Excel, moving into data visualisation and dashboard development, then database management and querying, and finally applying Python to clean, analyse and visualise data.
+
+I enjoy working with data to identify patterns, communicate insights and turn raw information into something meaningful and useful for decision-making.
+
+I’m now looking to build on these skills in a professional Data Analyst role while continuing to develop my technical and analytical abilities.
+<br>
+<br>
+<br>
+
+## My Data Journey
 
 - Excel and Data basics - Explored how Excel can be used to organise data and create visualisations to support analysis and decision-making
   
