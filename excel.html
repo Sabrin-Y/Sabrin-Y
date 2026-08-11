@@ -23,6 +23,7 @@
             line-height: 1.6;
         }
 
+
         /* Navigation */
 
         nav {
@@ -57,6 +58,7 @@
             color: #9b4dcc;
         }
 
+
         /* Page Header */
 
         .page-header {
@@ -85,6 +87,7 @@
             color: #222;
         }
 
+
         /* General Sections */
 
         section {
@@ -111,6 +114,7 @@
             font-size: 17px;
         }
 
+
         /* Project Overview */
 
         .overview {
@@ -121,35 +125,6 @@
             max-width: 900px;
         }
 
-        /* Project at a glance */
-
-        .glance {
-            background: #ffffff;
-        }
-
-        .glance-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px;
-            margin-top: 30px;
-        }
-
-        .glance-item {
-            background: #f7f7f9;
-            padding: 22px 25px;
-            border-left: 4px solid #9b4dcc;
-            border-radius: 5px;
-        }
-
-        .glance-item strong {
-            display: block;
-            margin-bottom: 4px;
-            color: #222;
-        }
-
-        .glance-item span {
-            color: #666;
-        }
 
         /* Skills */
 
@@ -172,6 +147,7 @@
             font-weight: bold;
             font-size: 14px;
         }
+
 
         /* Dataset */
 
@@ -202,6 +178,7 @@
             color: #666;
         }
 
+
         /* Analysis */
 
         .analysis {
@@ -231,9 +208,12 @@
             font-size: 25px;
         }
 
-        .analysis-card .what-i-did {
-            margin-bottom: 20px;
+        .what-i-did {
+            margin-bottom: 22px;
         }
+
+
+        /* Findings */
 
         .finding {
             background: #ffffff;
@@ -244,17 +224,18 @@
 
         .finding strong {
             display: block;
-            margin-bottom: 7px;
+            margin-bottom: 8px;
         }
 
         .finding p {
             font-size: 16px;
         }
 
-        /* Visualisations */
+
+        /* Project Images */
 
         .visualisation {
-            margin-top: 28px;
+            margin-top: 30px;
         }
 
         .visualisation img {
@@ -264,6 +245,7 @@
             border-radius: 6px;
             border: 1px solid #ddd;
         }
+
 
         /* Key Insights */
 
@@ -293,6 +275,7 @@
             font-size: 16px;
         }
 
+
         /* What I Learned */
 
         .learning {
@@ -302,6 +285,7 @@
         .learning p {
             max-width: 900px;
         }
+
 
         /* Footer */
 
@@ -317,6 +301,7 @@
             text-decoration: none;
             font-weight: bold;
         }
+
 
         /* Mobile */
 
@@ -341,7 +326,6 @@
                 font-size: 22px;
             }
 
-            .glance-grid,
             .dataset-list,
             .insight-grid {
                 grid-template-columns: 1fr;
@@ -390,10 +374,12 @@
         </div>
 
         <p class="objective">
+
             <strong>Objective:</strong>
             Analyse bike sales data to identify trends in revenue,
             profitability, product performance, geographical markets
             and customer demographics.
+
         </p>
 
     </header>
@@ -426,59 +412,7 @@
     </section>
 
 
-    <!-- Project at a Glance -->
-
-    <section class="glance">
-
-        <div class="section-container">
-
-            <h2>Project at a Glance</h2>
-
-            <div class="glance-grid">
-
-                <div class="glance-item">
-
-                    <strong>Tool</strong>
-
-                    <span>Microsoft Excel</span>
-
-                </div>
-
-
-                <div class="glance-item">
-
-                    <strong>Dataset</strong>
-
-                    <span>Bike Sales</span>
-
-                </div>
-
-
-                <div class="glance-item">
-
-                    <strong>Time Period</strong>
-
-                    <span>2017–2021</span>
-
-                </div>
-
-
-                <div class="glance-item">
-
-                    <strong>Key Measures</strong>
-
-                    <span>Revenue & Profit</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Skills -->
+    <!-- Skills Learned -->
 
     <section class="skills-section">
 
@@ -545,7 +479,9 @@
 
                     <strong>Years</strong>
 
-                    <span>2017–2021</span>
+                    <span>
+                        2017–2021
+                    </span>
 
                 </div>
 
@@ -590,7 +526,7 @@
     </section>
 
 
-    <!-- Analysis -->
+    <!-- Data Analysis -->
 
     <section class="analysis">
 
@@ -631,21 +567,22 @@
                     <strong>What the data shows</strong>
 
                     <p>
+
                         Revenue increased from approximately
                         <strong>$10.4 million in 2017</strong> to
                         <strong>$29.7 million in 2021</strong>.
                         Profit followed a similar overall upward
                         trend, increasing from approximately
                         <strong>$4.0 million</strong> to
-                        <strong>$12.9 million</strong>.
+                        <strong>$12.9 million</strong> over the
+                        same period.
+
                     </p>
 
                 </div>
 
 
                 <div class="visualisation">
-
-                    <h3>Visualisation</h3>
 
                     <img
                         src="images/excel-revenue.png"
@@ -683,28 +620,21 @@
                     <strong>What the data shows</strong>
 
                     <p>
+
                         The <strong>United States generated the highest
                         total revenue at approximately $30.8 million</strong>,
-                        followed by Australia at approximately
-                        $25.4 million.
-                    </p>
+                        followed by Australia at approximately $25.4 million.
+                        Bikes were the dominant product category, generating
+                        approximately <strong>$69.2 million</strong> of the
+                        <strong>$95.2 million</strong> total revenue shown
+                        in the dataset.
 
-                    <br>
-
-                    <p>
-                        Bikes were the dominant product category,
-                        generating approximately
-                        <strong>$69.2 million</strong> of the
-                        <strong>$95.2 million</strong> total revenue
-                        shown in the dataset.
                     </p>
 
                 </div>
 
 
                 <div class="visualisation">
-
-                    <h3>Visualisation</h3>
 
                     <img
                         src="images/excel-country.png"
@@ -742,34 +672,24 @@
                     <strong>What the data shows</strong>
 
                     <p>
+
                         Adults aged 35–64 generated approximately
                         <strong>$47.3 million</strong>, representing
                         around <strong>50% of total revenue</strong>.
-                    </p>
-
-                    <br>
-
-                    <p>
                         Young Adults aged 25–34 generated approximately
-                        <strong>$34.3 million</strong>, making them
-                        the second-largest revenue-generating group.
-                    </p>
-
-                    <br>
-
-                    <p>
+                        <strong>$34.3 million</strong>, making them the
+                        second-largest revenue-generating group.
                         Youth generated approximately
                         <strong>$13.2 million</strong>, while Seniors
                         generated approximately
                         <strong>$340,000</strong>.
+
                     </p>
 
                 </div>
 
 
                 <div class="visualisation">
-
-                    <h3>Visualisation</h3>
 
                     <img
                         src="images/excel-age.png"
@@ -804,7 +724,9 @@
 
                 <div class="insight-card">
 
-                    <h3>Revenue Growth</h3>
+                    <h3>
+                        Revenue Growth
+                    </h3>
 
                     <p>
                         Revenue increased substantially between
@@ -817,7 +739,9 @@
 
                 <div class="insight-card">
 
-                    <h3>Product Performance</h3>
+                    <h3>
+                        Product Performance
+                    </h3>
 
                     <p>
                         Bikes were the largest contributor to revenue,
@@ -830,7 +754,9 @@
 
                 <div class="insight-card">
 
-                    <h3>Market Performance</h3>
+                    <h3>
+                        Market Performance
+                    </h3>
 
                     <p>
                         The United States generated the highest total
@@ -842,7 +768,9 @@
 
                 <div class="insight-card">
 
-                    <h3>Customer Demographics</h3>
+                    <h3>
+                        Customer Demographics
+                    </h3>
 
                     <p>
                         Adults aged 35–64 were the largest
@@ -903,7 +831,5 @@
 
 
 </body>
-
-</html>
 
 </html>
