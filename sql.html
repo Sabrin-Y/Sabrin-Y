@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SQL | Sabrin Y</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f7f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: #ffffff;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e5e5;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav .links {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #9b4dcc;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: #ffffff;
+            padding: 65px 7% 55px;
+        }
+
+        .page-header h1 {
+            font-size: 52px;
+            margin-bottom: 8px;
+        }
+
+        .page-header .subtitle {
+            font-size: 25px;
+            color: #9b4dcc;
+            margin-bottom: 28px;
+        }
+
+        .objective {
+            max-width: 850px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .objective strong {
+            color: #222;
+        }
+
+        /* General Sections */
+        section {
+            padding: 60px 7%;
+        }
+
+        .section-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 34px;
+            margin-bottom: 22px;
+        }
+
+        section h3 {
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+
+        section p {
+            color: #555;
+            font-size: 17px;
+        }
+
+        /* Project Overview */
+        .overview {
+            background: #f7f7f9;
+        }
+
+        .overview p {
+            max-width: 900px;
+        }
+
+        /* Skills */
+        .skills-section {
+            background: #ffffff;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .skill {
+            background: #f0e5f7;
+            color: #7b35a3;
+            padding: 10px 17px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* SQL Project */
+        .projects {
+            background: #f7f7f9;
+        }
+
+        .projects-intro {
+            max-width: 900px;
+            margin-bottom: 35px;
+        }
+
+        .project-card {
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            padding: 32px;
+            margin-bottom: 40px;
+        }
+
+        .project-number {
+            color: #9b4dcc;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .project-card h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .project-description {
+            max-width: 900px;
+            margin-bottom: 28px;
+        }
+
+        /* Query Cards */
+        .query-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .query-card {
+            background: #f7f7f9;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            padding: 24px;
+        }
+
+        .query-card h3 {
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .query-card p {
+            font-size: 15px;
+            margin-bottom: 14px;
+        }
+
+        pre {
+            background: #222;
+            color: #f5f5f5;
+            padding: 18px;
+            border-radius: 7px;
+            overflow-x: auto;
+            font-size: 13px;
+            line-height: 1.55;
+        }
+
+        .output {
+            margin-top: 14px;
+            background: #ffffff;
+            border-left: 4px solid #9b4dcc;
+            padding: 13px 16px;
+            font-size: 14px;
+        }
+
+        .output strong {
+            color: #222;
+        }
+
+        /* Findings */
+        .finding {
+            background: #ffffff;
+            border-left: 4px solid #9b4dcc;
+            padding: 20px 24px;
+            margin-top: 25px;
+        }
+
+        .finding strong {
+            font-weight: 700;
+        }
+
+        .finding p {
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        /* Key Insights */
+        .insights {
+            background: #ffffff;
+        }
+
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .insight-card {
+            background: #f7f7f9;
+            padding: 28px;
+            border-radius: 10px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .insight-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .insight-card p {
+            font-size: 16px;
+        }
+
+        /* What I Learned */
+        .learning {
+            background: #f7f7f9;
+        }
+
+        .learning p {
+            max-width: 900px;
+        }
+
+        /* Footer */
+        footer {
+            background: #ffffff;
+            text-align: center;
+            padding: 35px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        footer a {
+            color: #9b4dcc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav .links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .page-header h1 {
+                font-size: 38px;
+            }
+
+            .page-header .subtitle {
+                font-size: 22px;
+            }
+
+            .insight-grid,
+            .query-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            Sabrin Y
+        </div>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="excel.html">Excel</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="powerbi.html">Power BI</a>
+            <a href="sql.html">SQL</a>
+            <a href="python.html">Python</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>SQL</h1>
+
+        <div class="subtitle">
+            Database Querying & Data Analysis
+        </div>
+
+        <p class="objective">
+            <strong>Objective:</strong>
+            Use SQL to query relational databases, filter and sort data,
+            perform calculations and aggregation, and extract useful information
+            from structured datasets.
+        </p>
+    </header>
+
+    <!-- Project Overview -->
+    <section class="overview">
+        <div class="section-container">
+
+            <h2>Project Overview</h2>
+
+            <p>
+                As part of my Level 3 Data Technician training, I developed
+                practical SQL skills using MySQL Workbench and the
+                <strong>world_db</strong> database. The practical exercises
+                focused on querying city and country data to answer a range
+                of real-world analytical questions.
+            </p>
+
+            <br>
+
+            <p>
+                The work progressed from database concepts and relationships
+                through to practical SQL queries using filtering, pattern
+                matching, sorting, limiting results, aggregation and joins.
+                The workbook contains 19 practical SQL scenarios covering
+                demographic, geographic and economic analysis.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Skills Learned -->
+    <section class="skills-section">
+        <div class="section-container">
+
+            <h2>Skills Learned</h2>
+
+            <p>
+                Through this project, I developed practical experience in
+                querying relational databases and using SQL to answer
+                data-driven questions.
+            </p>
+
+            <div class="skills">
+                <span class="skill">SQL</span>
+                <span class="skill">MySQL Workbench</span>
+                <span class="skill">Relational Databases</span>
+                <span class="skill">SELECT Statements</span>
+                <span class="skill">WHERE Filtering</span>
+                <span class="skill">LIKE</span>
+                <span class="skill">ORDER BY</span>
+                <span class="skill">LIMIT</span>
+                <span class="skill">COUNT</span>
+                <span class="skill">AVG</span>
+                <span class="skill">GROUP BY</span>
+                <span class="skill">JOINs</span>
+                <span class="skill">Primary & Foreign Keys</span>
+                <span class="skill">Data Interpretation</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SQL Project -->
+    <section class="projects">
+        <div class="section-container">
+
+            <h2>SQL Project</h2>
+
+            <p class="projects-intro">
+                I used the MySQL <strong>world_db</strong> database to answer
+                practical questions involving cities, countries, populations,
+                life expectancy and geographical information.
+            </p>
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    01 · SQL PRACTICAL
+                </div>
+
+                <h3>World Database Analysis</h3>
+
+                <p class="project-description">
+                    The practical involved writing SQL queries and reviewing
+                    their outputs to investigate patterns within the world
+                    database. The exercises demonstrate how SQL can be used
+                    to retrieve specific records, identify extreme values,
+                    compare populations and combine information across related
+                    tables.
+                </p>
+
+                <div class="query-grid">
+
+                    <div class="query-card">
+                        <h3>Count Cities in the USA</h3>
+                        <p>
+                            Counted the number of cities where the country code
+                            was USA.
+                        </p>
+
+                        <pre>SELECT COUNT(*) AS Cities_in_USA
+FROM city
+WHERE CountryCode = 'USA';</pre>
+
+                        <div class="output">
+                            <strong>Output:</strong> 274 cities
+                        </div>
+                    </div>
+
+                    <div class="query-card">
+                        <h3>Highest Life Expectancy</h3>
+                        <p>
+                            Sorted countries by life expectancy to identify
+                            the highest value.
+                        </p>
+
+                        <pre>SELECT Name, LifeExpectancy
+FROM country
+ORDER BY LifeExpectancy DESC
+LIMIT 1;</pre>
+
+                        <div class="output">
+                            <strong>Output:</strong> Andorra — 83.5
+                        </div>
+                    </div>
+
+                    <div class="query-card">
+                        <h3>Find Cities Beginning with "New"</h3>
+                        <p>
+                            Used pattern matching to find city names beginning
+                            with a specific prefix.
+                        </p>
+
+                        <pre>SELECT Name
+FROM city
+WHERE Name LIKE 'New%';</pre>
+
+                        <div class="output">
+                            <strong>Technique:</strong> LIKE with a wildcard
+                        </div>
+                    </div>
+
+                    <div class="query-card">
+                        <h3>Largest Cities</h3>
+                        <p>
+                            Sorted cities by population and limited the result
+                            to the first 10 records.
+                        </p>
+
+                        <pre>SELECT Name, Population
+FROM city
+ORDER BY Population DESC
+LIMIT 10;</pre>
+
+                        <div class="output">
+                            <strong>Technique:</strong> ORDER BY + LIMIT
+                        </div>
+                    </div>
+
+                    <div class="query-card">
+                        <h3>Cities Above 2 Million Population</h3>
+                        <p>
+                            Filtered the city table using a population threshold.
+                        </p>
+
+                        <pre>SELECT Name, Population
+FROM city
+WHERE Population &gt; 2000000;</pre>
+
+                        <div class="output">
+                            <strong>Technique:</strong> WHERE with a comparison operator
+                        </div>
+                    </div>
+
+                    <div class="query-card">
+                        <h3>Population Range</h3>
+                        <p>
+                            Identified cities with populations between 500,000
+                            and 1,000,000.
+                        </p>
+
+                        <pre>SELECT Name, Population
+FROM city
+WHERE Population BETWEEN 500000 AND 1000000;</pre>
+
+                        <div class="output">
+                            <strong>Technique:</strong> BETWEEN range filtering
+                        </div>
+                    </div>
+
+                    <div class="query-card">
+                        <h3>Most Populated City</h3>
+                        <p>
+                            Sorted city populations in descending order and
+                            returned the top record.
+                        </p>
+
+                        <pre>SELECT Name, Population
+FROM city
+ORDER BY Population DESC
+LIMIT 1;</pre>
+
+                        <div class="output">
+                            <strong>Output:</strong> Mumbai (Bombay) — 10,500,000
+                        </div>
+                    </div>
+
+                    <div class="query-card">
+                        <h3>City Name Frequency</h3>
+                        <p>
+                            Used COUNT and GROUP BY to calculate how often each
+                            city name appears.
+                        </p>
+
+                        <pre>SELECT Name, COUNT(*) AS Frequency
+FROM city
+GROUP BY Name
+ORDER BY Name ASC;</pre>
+
+                        <div class="output">
+                            <strong>Technique:</strong> COUNT + GROUP BY + ORDER BY
+                        </div>
+                    </div>
+
+                    <div class="query-card">
+                        <h3>Lowest Population City</h3>
+                        <p>
+                            Sorted cities by population in ascending order to
+                            identify the smallest population.
+                        </p>
+
+                        <pre>SELECT Name, Population
+FROM city
+ORDER BY Population ASC
+LIMIT 1;</pre>
+
+                        <div class="output">
+                            <strong>Output:</strong> Adamstown — 42
+                        </div>
+                    </div>
+
+                    <div class="query-card">
+                        <h3>Largest Country Population</h3>
+                        <p>
+                            Sorted countries by population to identify the
+                            largest population in the country table.
+                        </p>
+
+                        <pre>SELECT Name, Population
+FROM country
+ORDER BY Population DESC
+LIMIT 1;</pre>
+
+                        <div class="output">
+                            <strong>Output:</strong> China — 1,277,558,000
+                        </div>
+                    </div>
+
+                    <div class="query-card">
+                        <h3>Capital of Spain</h3>
+                        <p>
+                            Joined the country and city tables using their
+                            related key fields.
+                        </p>
+
+                        <pre>SELECT city.Name AS Capital
+FROM country
+JOIN city
+ON country.Capital = city.ID
+WHERE country.Name = 'Spain';</pre>
+
+                        <div class="output">
+                            <strong>Output:</strong> Madrid
+                        </div>
+                    </div>
+
+                    <div class="query-card">
+                        <h3>Cities in Europe</h3>
+                        <p>
+                            Used a JOIN to connect city and country information
+                            and filtered the result by continent.
+                        </p>
+
+                        <pre>SELECT city.Name AS City
+FROM city
+JOIN country
+ON city.CountryCode = country.Code
+WHERE country.Continent = 'Europe';</pre>
+
+                        <div class="output">
+                            <strong>Technique:</strong> JOIN + WHERE filtering
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="finding">
+                    <strong>What the practical demonstrates</strong>
+                    <p>
+                        The SQL exercises demonstrate the ability to move from
+                        a business question to a structured database query.
+                        Rather than relying on visualisations, the analysis
+                        uses SQL syntax to directly retrieve, filter, sort,
+                        aggregate and combine data.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Key Insights -->
+    <section class="insights">
+        <div class="section-container">
+
+            <h2>Key Insights</h2>
+
+            <p>
+                The SQL practical produced a range of findings from the
+                world database and demonstrated several different analytical
+                techniques.
+            </p>
+
+            <div class="insight-grid">
+
+                <div class="insight-card">
+                    <h3>Population Analysis</h3>
+                    <p>
+                        SQL was used to identify the most and least populated
+                        cities, filter cities above 2 million people and
+                        investigate population ranges.
+                    </p>
+                </div>
+
+                <div class="insight-card">
+                    <h3>Geographical Analysis</h3>
+                    <p>
+                        Queries were used to find cities in Europe, identify
+                        the capital of Spain and search for cities using
+                        name-based conditions.
+                    </p>
+                </div>
+
+                <div class="insight-card">
+                    <h3>Aggregation</h3>
+                    <p>
+                        COUNT and GROUP BY were used to analyse city-name
+                        frequency, while AVG was used to investigate average
+                        population by country.
+                    </p>
+                </div>
+
+                <div class="insight-card">
+                    <h3>Relational Queries</h3>
+                    <p>
+                        JOIN operations connected the city and country tables,
+                        demonstrating how related data can be combined to
+                        answer more complex questions.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- What I Learned -->
+    <section class="learning">
+        <div class="section-container">
+
+            <h2>What I Learned</h2>
+
+            <p>
+                This project strengthened my understanding of relational
+                databases and the role of SQL in extracting information from
+                structured data. I developed practical experience using
+                SELECT statements, filtering conditions, sorting, limits and
+                aggregate functions.
+            </p>
+
+            <br>
+
+            <p>
+                I also developed my understanding of database relationships,
+                including primary and foreign keys and different types of
+                JOINs. The workbook introduced INNER, LEFT, RIGHT, FULL,
+                CROSS and SELF JOIN concepts before applying JOINs in the
+                practical database exercises.
+            </p>
+
+            <br>
+
+            <p>
+                Overall, the project helped me understand how SQL can turn a
+                business or analytical question into a precise query and
+                return a focused result that can support decision-making.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="index.html">
+            ← Back to Portfolio
+        </a>
+    </footer>
+
+</body>
+</html>
