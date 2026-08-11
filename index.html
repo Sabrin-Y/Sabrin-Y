@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sabrin Y | Data Analyst Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f7f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #ffffff;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e5e5;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav .links {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #9b4dcc;
+        }
+
+        .hero {
+            padding: 100px 8%;
+            background: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            font-weight: 500;
+            color: #9b4dcc;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            font-size: 19px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            background: #9b4dcc;
+            color: white;
+            font-weight: bold;
+        }
+
+        .button.secondary {
+            background: #eeeeee;
+            color: #333;
+        }
+
+        section {
+            padding: 70px 8%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 34px;
+            margin-bottom: 25px;
+        }
+
+        .about p {
+            max-width: 850px;
+            font-size: 17px;
+            color: #555;
+        }
+
+        .journey {
+            background: #ffffff;
+            max-width: none;
+        }
+
+        .journey-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #e5e5e5;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card .number {
+            color: #9b4dcc;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .card a {
+            color: #9b4dcc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact {
+            background: #ffffff;
+            text-align: center;
+            max-width: none;
+        }
+
+        .contact p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav .links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            Sabrin Y
+        </div>
+
+        <div class="links">
+
+            <a href="index.html">Home</a>
+            <a href="excel.html">Excel</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="powerbi.html">Power BI</a>
+            <a href="sql.html">SQL</a>
+            <a href="python.html">Python</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero -->
+
+    <header class="hero">
+
+        <h1>Sabrin Y</h1>
+
+        <h2>Aspiring Data Analyst</h2>
+
+        <p>
+            Turning data into meaningful insights, visualisations
+            and informed decisions.
+        </p>
+
+        <a href="#journey" class="button">
+            Explore My Portfolio
+        </a>
+
+        <a href="#about" class="button secondary">
+            About Me
+        </a>
+
+    </header>
+
+
+    <!-- Introduction -->
+
+    <section class="about">
+
+        <h2>Welcome to My Data Portfolio</h2>
+
+        <p>
+            I recently completed a Level 3 Data Technician Bootcamp,
+            where I developed practical skills across data analysis,
+            visualisation, databases and programming.
+        </p>
+
+        <br>
+
+        <p>
+            This portfolio showcases the skills I developed throughout
+            my training, along with the projects I completed using
+            Excel, Tableau, Power BI, SQL, MySQL and Python.
+        </p>
+
+        <br>
+
+        <p>
+            Explore my portfolio to see how I have applied these tools
+            to datasets, analysed information and transformed data into
+            meaningful insights.
+        </p>
+
+    </section>
+
+
+    <!-- About Me -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I’m an aspiring Data Analyst and recent Level 3 Data
+            Technician graduate with hands-on experience working with
+            data across Excel, Tableau, Power BI, SQL and Python.
+        </p>
+
+        <br>
+
+        <p>
+            Throughout my training, I developed my skills progressively,
+            starting with the fundamentals of working with data in
+            Excel, moving into data visualisation and dashboard
+            development, followed by database management and querying,
+            and finally applying Python to clean, analyse and visualise
+            data.
+        </p>
+
+        <br>
+
+        <p>
+            I enjoy exploring datasets, identifying patterns and trends,
+            and transforming complex information into clear and
+            accessible insights.
+        </p>
+
+    </section>
+
+
+    <!-- Data Journey -->
+
+    <section class="journey" id="journey">
+
+        <div class="journey-container">
+
+            <h2>My Data Journey</h2>
+
+            <p>
+                My training allowed me to progressively develop my
+                technical and analytical skills across a range of
+                industry tools.
+            </p>
+
+
+            <div class="cards">
+
+
+                <!-- Excel -->
+
+                <div class="card">
+
+                    <div class="number">
+                        01
+                    </div>
+
+                    <h3>
+                        Excel & Data Fundamentals
+                    </h3>
+
+                    <p>
+                        Developed a foundation in organising,
+                        analysing and visualising data using Excel.
+                    </p>
+
+                    <div class="skills">
+                        Excel · PivotTables · PivotCharts ·
+                        Data Analysis
+                    </div>
+
+                    <br>
+
+                    <a href="excel.html">
+                        View Excel Projects →
+                    </a>
+
+                </div>
+
+
+                <!-- Tableau -->
+
+                <div class="card">
+
+                    <div class="number">
+                        02
+                    </div>
+
+                    <h3>
+                        Tableau
+                    </h3>
+
+                    <p>
+                        Developed interactive dashboards and
+                        visualisations to communicate insights clearly.
+                    </p>
+
+                    <div class="skills">
+                        Tableau · Data Visualisation · Dashboards
+                    </div>
+
+                    <br>
+
+                    <a href="tableau.html">
+                        View Tableau Projects →
+                    </a>
+
+                </div>
+
+
+                <!-- Power BI -->
+
+                <div class="card">
+
+                    <div class="number">
+                        03
+                    </div>
+
+                    <h3>
+                        Power BI
+                    </h3>
+
+                    <p>
+                        Created interactive dashboards and explored
+                        data to identify trends and key performance
+                        indicators.
+                    </p>
+
+                    <div class="skills">
+                        Power BI · Dashboards · Data Visualisation
+                    </div>
+
+                    <br>
+
+                    <a href="powerbi.html">
+                        View Power BI Projects →
+                    </a>
+
+                </div>
+
+
+                <!-- SQL -->
+
+                <div class="card">
+
+                    <div class="number">
+                        04
+                    </div>
+
+                    <h3>
+                        SQL & MySQL
+                    </h3>
+
+                    <p>
+                        Developed database querying skills using SQL
+                        to retrieve, filter and manage structured data.
+                    </p>
+
+                    <div class="skills">
+                        SQL · MySQL · Database Management
+                    </div>
+
+                    <br>
+
+                    <a href="sql.html">
+                        View SQL Projects →
+                    </a>
+
+                </div>
+
+
+                <!-- Python -->
+
+                <div class="card">
+
+                    <div class="number">
+                        05
+                    </div>
+
+                    <h3>
+                        Python & Google Colab
+                    </h3>
+
+                    <p>
+                        Applied Python to clean, transform, analyse
+                        and visualise datasets.
+                    </p>
+
+                    <div class="skills">
+                        Python · Pandas · Data Analysis ·
+                        Visualisation
+                    </div>
+
+                    <br>
+
+                    <a href="python.html">
+                        View Python Projects →
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+
+    <section class="contact">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            I’m currently looking to begin my career as a Data Analyst
+            and am open to opportunities where I can apply my skills,
+            continue learning and contribute to data-driven projects.
+        </p>
+
+        <a href="#" class="button">
+            LinkedIn
+        </a>
+
+        <a href="#" class="button secondary">
+            GitHub
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        © 2026 Sabrin Y · Data Analyst Portfolio
+
+    </footer>
+
+</body>
+</html>
