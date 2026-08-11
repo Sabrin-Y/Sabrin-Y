@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,9 +23,11 @@
             line-height: 1.6;
         }
 
+        /* Navigation */
+
         nav {
             background: #ffffff;
-            padding: 20px 8%;
+            padding: 20px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -41,12 +44,12 @@
 
         nav .links {
             display: flex;
-            gap: 25px;
+            gap: 28px;
         }
 
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #222;
             font-weight: 500;
         }
 
@@ -54,35 +57,52 @@
             color: #9b4dcc;
         }
 
+        /* Page Header */
+
         .page-header {
             background: #ffffff;
-            padding: 80px 8%;
+            padding: 65px 7% 55px;
         }
 
         .page-header h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+            font-size: 52px;
+            margin-bottom: 8px;
         }
 
-        .page-header p {
-            font-size: 22px;
+        .page-header .subtitle {
+            font-size: 25px;
             color: #9b4dcc;
+            margin-bottom: 28px;
         }
+
+        .objective {
+            max-width: 850px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .objective strong {
+            color: #222;
+        }
+
+        /* General Sections */
 
         section {
+            padding: 60px 7%;
+        }
+
+        .section-container {
             max-width: 1100px;
             margin: auto;
-            padding: 60px 8%;
         }
 
         section h2 {
-            font-size: 32px;
-            margin-bottom: 25px;
+            font-size: 34px;
+            margin-bottom: 22px;
         }
 
         section h3 {
             font-size: 23px;
-            margin-top: 35px;
             margin-bottom: 12px;
         }
 
@@ -91,86 +111,199 @@
             font-size: 17px;
         }
 
-        .skills-section {
-            background: #ffffff;
-            max-width: none;
+        /* Project Overview */
+
+        .overview {
+            background: #f7f7f9;
         }
 
-        .skills-container {
-            max-width: 1100px;
-            margin: auto;
+        .overview p {
+            max-width: 900px;
+        }
+
+        /* Project at a glance */
+
+        .glance {
+            background: #ffffff;
+        }
+
+        .glance-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-top: 30px;
+        }
+
+        .glance-item {
+            background: #f7f7f9;
+            padding: 22px 25px;
+            border-left: 4px solid #9b4dcc;
+            border-radius: 5px;
+        }
+
+        .glance-item strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #222;
+        }
+
+        .glance-item span {
+            color: #666;
+        }
+
+        /* Skills */
+
+        .skills-section {
+            background: #ffffff;
         }
 
         .skills {
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
         .skill {
             background: #f0e5f7;
             color: #7b35a3;
-            padding: 10px 16px;
+            padding: 10px 17px;
             border-radius: 20px;
             font-weight: bold;
             font-size: 14px;
         }
 
-        .analysis-card {
+        /* Dataset */
+
+        .dataset {
+            background: #f7f7f9;
+        }
+
+        .dataset-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-top: 30px;
+        }
+
+        .dataset-item {
             background: #ffffff;
+            padding: 22px 25px;
+            border-radius: 8px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .dataset-item strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .dataset-item span {
+            color: #666;
+        }
+
+        /* Analysis */
+
+        .analysis {
+            background: #ffffff;
+        }
+
+        .analysis-intro {
+            margin-bottom: 35px;
+        }
+
+        .analysis-card {
+            background: #f7f7f9;
             border: 1px solid #e5e5e5;
             border-radius: 10px;
-            padding: 30px;
-            margin-top: 25px;
+            padding: 32px;
+            margin-bottom: 40px;
+        }
+
+        .analysis-number {
+            color: #9b4dcc;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
         }
 
         .analysis-card h3 {
-            margin-top: 0;
-            color: #333;
+            font-size: 25px;
         }
 
-        .visualisation {
-            margin-top: 35px;
+        .analysis-card .what-i-did {
+            margin-bottom: 20px;
+        }
+
+        .finding {
             background: #ffffff;
-            padding: 25px;
-            border-radius: 10px;
-            border: 1px solid #e5e5e5;
+            border-left: 4px solid #9b4dcc;
+            padding: 20px 24px;
+            margin-top: 22px;
+        }
+
+        .finding strong {
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        .finding p {
+            font-size: 16px;
+        }
+
+        /* Visualisations */
+
+        .visualisation {
+            margin-top: 28px;
         }
 
         .visualisation img {
             width: 100%;
-            max-width: 1000px;
             display: block;
-            margin: 20px auto 0;
+            margin-top: 20px;
             border-radius: 6px;
             border: 1px solid #ddd;
         }
 
+        /* Key Insights */
+
         .insights {
+            background: #f7f7f9;
+        }
+
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .insight-card {
             background: #ffffff;
-            max-width: none;
+            padding: 28px;
+            border-radius: 10px;
+            border: 1px solid #e5e5e5;
         }
 
-        .insights-container {
-            max-width: 1100px;
-            margin: auto;
+        .insight-card h3 {
+            margin-bottom: 10px;
         }
 
-        .insights ul {
-            margin-top: 20px;
-            padding-left: 25px;
+        .insight-card p {
+            font-size: 16px;
         }
 
-        .insights li {
-            margin-bottom: 15px;
-            font-size: 17px;
-            color: #555;
+        /* What I Learned */
+
+        .learning {
+            background: #ffffff;
         }
 
-        .reflection {
-            max-width: 1100px;
+        .learning p {
+            max-width: 900px;
         }
+
+        /* Footer */
 
         footer {
             background: #ffffff;
@@ -184,6 +317,8 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        /* Mobile */
 
         @media (max-width: 700px) {
 
@@ -200,6 +335,16 @@
 
             .page-header h1 {
                 font-size: 38px;
+            }
+
+            .page-header .subtitle {
+                font-size: 22px;
+            }
+
+            .glance-grid,
+            .dataset-list,
+            .insight-grid {
+                grid-template-columns: 1fr;
             }
 
         }
@@ -240,30 +385,95 @@
 
         <h1>Excel & Data Fundamentals</h1>
 
-        <p>Bike Sales Data Analysis</p>
+        <div class="subtitle">
+            Bike Sales Data Analysis
+        </div>
+
+        <p class="objective">
+            <strong>Objective:</strong>
+            Analyse bike sales data to identify trends in revenue,
+            profitability, product performance, geographical markets
+            and customer demographics.
+        </p>
 
     </header>
 
 
     <!-- Project Overview -->
 
-    <section>
+    <section class="overview">
 
-        <h2>Project Overview</h2>
+        <div class="section-container">
 
-        <p>
-            As part of my Level 3 Data Technician training, I used
-            Microsoft Excel to analyse a bike sales dataset and explore
-            patterns in revenue and profitability.
-        </p>
+            <h2>Project Overview</h2>
 
-        <br>
+            <p>
+                As part of my Level 3 Data Technician training, I used
+                Microsoft Excel to analyse a bike sales dataset and
+                identify patterns in revenue and profitability.
+            </p>
 
-        <p>
-            I used PivotTables and PivotCharts to summarise the data
-            and create visualisations across different years, countries,
-            product categories and customer age groups.
-        </p>
+            <br>
+
+            <p>
+                Using PivotTables and PivotCharts, I explored sales
+                performance across different years, countries, product
+                categories and customer age groups.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Project at a Glance -->
+
+    <section class="glance">
+
+        <div class="section-container">
+
+            <h2>Project at a Glance</h2>
+
+            <div class="glance-grid">
+
+                <div class="glance-item">
+
+                    <strong>Tool</strong>
+
+                    <span>Microsoft Excel</span>
+
+                </div>
+
+
+                <div class="glance-item">
+
+                    <strong>Dataset</strong>
+
+                    <span>Bike Sales</span>
+
+                </div>
+
+
+                <div class="glance-item">
+
+                    <strong>Time Period</strong>
+
+                    <span>2017–2021</span>
+
+                </div>
+
+
+                <div class="glance-item">
+
+                    <strong>Key Measures</strong>
+
+                    <span>Revenue & Profit</span>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
@@ -272,23 +482,32 @@
 
     <section class="skills-section">
 
-        <div class="skills-container">
+        <div class="section-container">
 
             <h2>Skills Learned</h2>
 
             <p>
-                Through this project, I developed practical skills
-                in analysing and presenting data using Excel.
+                Through this project, I developed practical skills in
+                analysing, summarising and presenting data using Excel.
             </p>
 
             <div class="skills">
 
                 <span class="skill">Microsoft Excel</span>
+
                 <span class="skill">PivotTables</span>
+
                 <span class="skill">PivotCharts</span>
+
                 <span class="skill">Data Analysis</span>
+
                 <span class="skill">Data Visualisation</span>
+
                 <span class="skill">Data Interpretation</span>
+
+                <span class="skill">Trend Analysis</span>
+
+                <span class="skill">Data Summarisation</span>
 
             </div>
 
@@ -299,189 +518,375 @@
 
     <!-- Dataset -->
 
-    <section>
+    <section class="dataset">
 
-        <h2>Dataset & Data Used</h2>
+        <div class="section-container">
 
-        <p>
-            The dataset contained information relating to bike sales
-            across different years, countries, product categories and
-            customer age groups.
-        </p>
+            <h2>Dataset & Data Used</h2>
 
-        <br>
+            <p>
+                The dataset contained information on bike sales,
+                including revenue and profit across different years,
+                countries, product categories and customer age groups.
+            </p>
 
-        <p>
-            The data included revenue and profit figures, allowing me
-            to explore sales performance and identify patterns across
-            different markets, products and customer groups.
-        </p>
+            <br>
+
+            <p>
+                I used these variables to investigate how sales
+                performance varied over time and across different
+                markets, products and customer demographics.
+            </p>
+
+
+            <div class="dataset-list">
+
+                <div class="dataset-item">
+
+                    <strong>Years</strong>
+
+                    <span>2017–2021</span>
+
+                </div>
+
+
+                <div class="dataset-item">
+
+                    <strong>Countries</strong>
+
+                    <span>
+                        Australia · Canada · France · Germany ·
+                        United Kingdom · United States
+                    </span>
+
+                </div>
+
+
+                <div class="dataset-item">
+
+                    <strong>Product Categories</strong>
+
+                    <span>
+                        Accessories · Bikes · Clothing
+                    </span>
+
+                </div>
+
+
+                <div class="dataset-item">
+
+                    <strong>Customer Age Groups</strong>
+
+                    <span>
+                        Youth · Young Adults · Adults · Seniors
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
 
     <!-- Analysis -->
 
-    <section>
+    <section class="analysis">
 
-        <h2>What I Analysed</h2>
+        <div class="section-container">
 
+            <h2>Data Analysis</h2>
 
-        <div class="analysis-card">
-
-            <h3>Revenue & Profit Over Time</h3>
-
-            <p>
-                I compared annual revenue and profit between 2017 and
-                2021 to explore changes in business performance over
-                time.
+            <p class="analysis-intro">
+                I used PivotTables and PivotCharts to explore the
+                dataset from different perspectives and identify
+                patterns that could support business decision-making.
             </p>
 
-        </div>
+
+            <!-- Analysis 1 -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    01 · REVENUE & PROFITABILITY
+                </div>
+
+                <h3>
+                    Revenue & Profit Over Time
+                </h3>
+
+                <p class="what-i-did">
+
+                    I compared annual revenue and profit between
+                    2017 and 2021 to examine changes in business
+                    performance over time.
+
+                </p>
 
 
-        <div class="analysis-card">
+                <div class="finding">
 
-            <h3>Revenue by Country & Product Category</h3>
+                    <strong>What the data shows</strong>
 
-            <p>
-                I compared revenue across different countries and
-                analysed how Accessories, Bikes and Clothing contributed
-                to overall revenue.
-            </p>
+                    <p>
+                        Revenue increased from approximately
+                        <strong>$10.4 million in 2017</strong> to
+                        <strong>$29.7 million in 2021</strong>.
+                        Profit followed a similar overall upward
+                        trend, increasing from approximately
+                        <strong>$4.0 million</strong> to
+                        <strong>$12.9 million</strong>.
+                    </p>
 
-        </div>
+                </div>
 
 
-        <div class="analysis-card">
+                <div class="visualisation">
 
-            <h3>Revenue by Customer Age Group</h3>
+                    <h3>Visualisation</h3>
 
-            <p>
-                I compared revenue across different customer age groups
-                to identify which demographics generated the most revenue.
-            </p>
+                    <img
+                        src="images/excel-revenue.png"
+                        alt="Excel analysis showing annual revenue and profit from 2017 to 2021"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Analysis 2 -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    02 · GEOGRAPHICAL & PRODUCT ANALYSIS
+                </div>
+
+                <h3>
+                    Revenue by Country & Product Category
+                </h3>
+
+                <p class="what-i-did">
+
+                    I compared total revenue across six countries
+                    and examined the contribution of Accessories,
+                    Bikes and Clothing to overall revenue.
+
+                </p>
+
+
+                <div class="finding">
+
+                    <strong>What the data shows</strong>
+
+                    <p>
+                        The <strong>United States generated the highest
+                        total revenue at approximately $30.8 million</strong>,
+                        followed by Australia at approximately
+                        $25.4 million.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Bikes were the dominant product category,
+                        generating approximately
+                        <strong>$69.2 million</strong> of the
+                        <strong>$95.2 million</strong> total revenue
+                        shown in the dataset.
+                    </p>
+
+                </div>
+
+
+                <div class="visualisation">
+
+                    <h3>Visualisation</h3>
+
+                    <img
+                        src="images/excel-country.png"
+                        alt="Excel analysis showing revenue by country and product category"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Analysis 3 -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    03 · CUSTOMER DEMOGRAPHICS
+                </div>
+
+                <h3>
+                    Revenue by Customer Age Group
+                </h3>
+
+                <p class="what-i-did">
+
+                    I compared total revenue across four customer
+                    age groups to identify which demographic
+                    contributed most to overall sales.
+
+                </p>
+
+
+                <div class="finding">
+
+                    <strong>What the data shows</strong>
+
+                    <p>
+                        Adults aged 35–64 generated approximately
+                        <strong>$47.3 million</strong>, representing
+                        around <strong>50% of total revenue</strong>.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Young Adults aged 25–34 generated approximately
+                        <strong>$34.3 million</strong>, making them
+                        the second-largest revenue-generating group.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Youth generated approximately
+                        <strong>$13.2 million</strong>, while Seniors
+                        generated approximately
+                        <strong>$340,000</strong>.
+                    </p>
+
+                </div>
+
+
+                <div class="visualisation">
+
+                    <h3>Visualisation</h3>
+
+                    <img
+                        src="images/excel-age.png"
+                        alt="Excel analysis showing revenue by customer age group"
+                    >
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- Visualisations -->
-
-    <section>
-
-        <h2>Project Visualisations</h2>
-
-
-        <div class="visualisation">
-
-            <h3>Revenue & Profit Analysis</h3>
-
-            <p>
-                Annual revenue and profit from 2017–2021.
-            </p>
-
-            <img src="images/excel-revenue.png"
-                 alt="Excel revenue and profit analysis">
-
-        </div>
-
-
-        <div class="visualisation">
-
-            <h3>Revenue by Country & Product Category</h3>
-
-            <p>
-                Revenue comparison across countries and product
-                categories.
-            </p>
-
-            <img src="images/excel-country.png"
-                 alt="Excel revenue by country and product category">
-
-        </div>
-
-
-        <div class="visualisation">
-
-            <h3>Revenue by Age Group</h3>
-
-            <p>
-                Revenue distribution across different customer
-                age groups.
-            </p>
-
-            <img src="images/excel-age.png"
-                 alt="Excel revenue comparison by age group">
-
-        </div>
-
-    </section>
-
-
-    <!-- Insights -->
+    <!-- Key Insights -->
 
     <section class="insights">
 
-        <div class="insights-container">
+        <div class="section-container">
 
-            <h2>What the Data Shows</h2>
+            <h2>Key Insights</h2>
 
-            <ul>
+            <p>
+                The analysis highlighted several key patterns within
+                the bike sales dataset.
+            </p>
 
-                <li>
-                    Revenue and profit showed an overall upward trend
-                    between 2017 and 2021.
-                </li>
 
-                <li>
-                    Bikes were the largest contributor to revenue
-                    across the product categories analysed.
-                </li>
+            <div class="insight-grid">
 
-                <li>
-                    The United States generated the highest overall
-                    revenue among the countries analysed.
-                </li>
 
-                <li>
-                    Customers aged 35–64 represented the largest
-                    revenue-generating customer group.
-                </li>
+                <div class="insight-card">
 
-                <li>
-                    Young Adults aged 25–34 represented the
-                    second-largest revenue-generating group.
-                </li>
+                    <h3>Revenue Growth</h3>
 
-            </ul>
+                    <p>
+                        Revenue increased substantially between
+                        2017 and 2021, indicating strong overall
+                        sales growth across the period analysed.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <h3>Product Performance</h3>
+
+                    <p>
+                        Bikes were the largest contributor to revenue,
+                        significantly outperforming Accessories and
+                        Clothing.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <h3>Market Performance</h3>
+
+                    <p>
+                        The United States generated the highest total
+                        revenue among the six countries analysed.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <h3>Customer Demographics</h3>
+
+                    <p>
+                        Adults aged 35–64 were the largest
+                        revenue-generating customer group, accounting
+                        for approximately half of total revenue.
+                    </p>
+
+                </div>
+
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- Reflection -->
+    <!-- What I Learned -->
 
-    <section class="reflection">
+    <section class="learning">
 
-        <h2>What I Learned</h2>
+        <div class="section-container">
 
-        <p>
-            This project helped me develop my ability to organise,
-            summarise and interpret data using Excel. I learned how
-            PivotTables can be used to explore datasets from different
-            perspectives and how PivotCharts can communicate patterns
-            and trends clearly.
-        </p>
+            <h2>What I Learned</h2>
 
-        <br>
+            <p>
+                This project strengthened my ability to organise,
+                summarise and interpret data using Microsoft Excel.
+                I developed practical experience using PivotTables
+                and PivotCharts to explore datasets and communicate
+                patterns visually.
+            </p>
 
-        <p>
-            I also developed my ability to interpret data and identify
-            insights that could support business decision-making.
-        </p>
+            <br>
+
+            <p>
+                I also developed my ability to move beyond simply
+                presenting data and instead identify meaningful
+                insights from the results. This helped me understand
+                how data analysis can be used to support
+                business-focused decision-making.
+            </p>
+
+        </div>
 
     </section>
 
@@ -498,5 +903,7 @@
 
 
 </body>
+
+</html>
 
 </html>
