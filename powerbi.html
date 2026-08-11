@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Power BI | Sabrin Y</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f7f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+
+        /* Navigation */
+
+        nav {
+            background: #ffffff;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e5e5;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav .links {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #9b4dcc;
+        }
+
+
+        /* Page Header */
+
+        .page-header {
+            background: #ffffff;
+            padding: 65px 7% 55px;
+        }
+
+        .page-header h1 {
+            font-size: 52px;
+            margin-bottom: 8px;
+        }
+
+        .page-header .subtitle {
+            font-size: 25px;
+            color: #9b4dcc;
+            margin-bottom: 28px;
+        }
+
+        .objective {
+            max-width: 850px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .objective strong {
+            color: #222;
+        }
+
+
+        /* General Sections */
+
+        section {
+            padding: 60px 7%;
+        }
+
+        .section-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 34px;
+            margin-bottom: 22px;
+        }
+
+        section h3 {
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+
+        section p {
+            color: #555;
+            font-size: 17px;
+        }
+
+
+        /* Project Overview */
+
+        .overview {
+            background: #f7f7f9;
+        }
+
+        .overview p {
+            max-width: 900px;
+        }
+
+
+        /* Skills */
+
+        .skills-section {
+            background: #ffffff;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .skill {
+            background: #f0e5f7;
+            color: #7b35a3;
+            padding: 10px 17px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+
+        /* Power BI Project */
+
+        .projects {
+            background: #f7f7f9;
+        }
+
+        .projects-intro {
+            max-width: 900px;
+            margin-bottom: 35px;
+        }
+
+        .project-card {
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            padding: 32px;
+            margin-bottom: 40px;
+        }
+
+        .project-number {
+            color: #9b4dcc;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .project-card h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .project-description {
+            max-width: 900px;
+            margin-bottom: 28px;
+        }
+
+
+        /* Dashboard Screenshot */
+
+        .dashboard-image {
+            width: 100%;
+            display: block;
+            margin-top: 28px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+
+
+        /* Findings */
+
+        .finding {
+            background: #ffffff;
+            border-left: 4px solid #9b4dcc;
+            padding: 20px 24px;
+            margin-top: 25px;
+        }
+
+        .finding strong {
+            font-weight: 700;
+        }
+
+        .finding p {
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+
+        /* Dashboard Button */
+
+        .dashboard-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 22px;
+            background: #9b4dcc;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .dashboard-button:hover {
+            background: #7b35a3;
+        }
+
+
+        /* Key Insights */
+
+        .insights {
+            background: #ffffff;
+        }
+
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .insight-card {
+            background: #f7f7f9;
+            padding: 28px;
+            border-radius: 10px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .insight-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .insight-card p {
+            font-size: 16px;
+        }
+
+
+        /* What I Learned */
+
+        .learning {
+            background: #f7f7f9;
+        }
+
+        .learning p {
+            max-width: 900px;
+        }
+
+
+        /* Footer */
+
+        footer {
+            background: #ffffff;
+            text-align: center;
+            padding: 35px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        footer a {
+            color: #9b4dcc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        /* Mobile */
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav .links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .page-header h1 {
+                font-size: 38px;
+            }
+
+            .page-header .subtitle {
+                font-size: 22px;
+            }
+
+            .insight-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card {
+                padding: 24px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            Sabrin Y
+        </div>
+
+        <div class="links">
+
+            <a href="index.html">Home</a>
+            <a href="excel.html">Excel</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="powerbi.html">Power BI</a>
+            <a href="sql.html">SQL</a>
+            <a href="python.html">Python</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Page Header -->
+
+    <header class="page-header">
+
+        <h1>Power BI</h1>
+
+        <div class="subtitle">
+            Interactive Dashboard Development & Data Analysis
+        </div>
+
+        <p class="objective">
+
+            <strong>Objective:</strong>
+            Analyse sales data using Power BI to identify trends,
+            monitor key performance indicators and communicate
+            insights through interactive visualisations.
+
+        </p>
+
+    </header>
+
+
+    <!-- Project Overview -->
+
+    <section class="overview">
+
+        <div class="section-container">
+
+            <h2>Project Overview</h2>
+
+            <p>
+                As part of my Level 3 Data Technician training, I used
+                Microsoft Power BI to analyse sales data and develop
+                an interactive dashboard to explore business performance.
+            </p>
+
+            <br>
+
+            <p>
+                The dashboard brings together key performance indicators,
+                charts, geographical analysis and trend visualisations
+                to provide an overview of sales and profitability.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Learned -->
+
+    <section class="skills-section">
+
+        <div class="section-container">
+
+            <h2>Skills Learned</h2>
+
+            <p>
+                Through this project, I developed practical skills in
+                analysing data, creating interactive dashboards and
+                communicating business insights using Power BI.
+            </p>
+
+            <div class="skills">
+
+                <span class="skill">Power BI</span>
+
+                <span class="skill">Data Visualisation</span>
+
+                <span class="skill">Dashboard Development</span>
+
+                <span class="skill">Data Analysis</span>
+
+                <span class="skill">Data Interpretation</span>
+
+                <span class="skill">Interactive Filters</span>
+
+                <span class="skill">KPI Analysis</span>
+
+                <span class="skill">DAX</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Power BI Project -->
+
+    <section class="projects">
+
+        <div class="section-container">
+
+            <h2>Power BI Project</h2>
+
+            <p class="projects-intro">
+                I applied Power BI to a sales dataset to create an
+                interactive dashboard that brings together key sales,
+                profit and performance measures.
+            </p>
+
+
+            <!-- Project 1 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    01 · SALES PERFORMANCE DASHBOARD
+                </div>
+
+                <h3>
+                    Sales Performance Analysis
+                </h3>
+
+                <p class="project-description">
+
+                    I created an interactive Power BI dashboard to
+                    analyse sales performance across different
+                    categories, sub-categories, customer segments,
+                    countries and time periods.
+
+                </p>
+
+
+                <!-- Dashboard Screenshot -->
+
+                <img
+                    class="dashboard-image"
+                    src="images/powerbi-dashboard.png"
+                    alt="Power BI Sales Performance Dashboard"
+                >
+
+
+                <div class="finding">
+
+                    <strong>What the dashboard shows</strong>
+
+                    <p>
+
+                        The dashboard provides an overview of total sales,
+                        total profit, quantity and orders. It also explores
+                        profit by sub-category, sales by category,
+                        customer segments, geographical sales performance
+                        and monthly sales trends.
+
+                    </p>
+
+                </div>
+
+
+                <a
+                    class="dashboard-button"
+                    href="https://app.powerbi.com/view?r=eyJrIjoiYzNkZTUxMTktMTdjOS00YTk5LWI1NzEtODIxOGVkNmM2M2NiIiwidCI6IjNlYTdjMTI4LWM2MDEtNDQ3OS1hMDAzLWUxNGQwMGMwYjVjYiJ9"
+                    target="_blank"
+                >
+                    View Interactive Dashboard →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Key Insights -->
+
+    <section class="insights">
+
+        <div class="section-container">
+
+            <h2>Key Insights</h2>
+
+            <p>
+                The Power BI dashboard highlights several patterns
+                within the sales dataset.
+            </p>
+
+
+            <div class="insight-grid">
+
+
+                <div class="insight-card">
+
+                    <h3>
+                        Overall Performance
+                    </h3>
+
+                    <p>
+                        The dashboard reports total sales of approximately
+                        £651K and total profit of approximately £86K,
+                        providing a high-level view of overall business
+                        performance.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <h3>
+                        Customer Segments
+                    </h3>
+
+                    <p>
+                        Consumer customers represent the largest segment,
+                        accounting for approximately 54% of sales, followed
+                        by Corporate and Home Office customers.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <h3>
+                        Category Performance
+                    </h3>
+
+                    <p>
+                        Furniture generates the highest sales among the
+                        three main categories, followed by Office Supplies
+                        and Technology.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <h3>
+                        Sales Trends
+                    </h3>
+
+                    <p>
+                        The monthly sales trend shows fluctuations over
+                        time while also indicating an overall increase
+                        towards the later periods shown in the dashboard.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- What I Learned -->
+
+    <section class="learning">
+
+        <div class="section-container">
+
+            <h2>What I Learned</h2>
+
+            <p>
+                This project strengthened my ability to transform raw
+                data into an interactive dashboard using Microsoft
+                Power BI. I developed experience selecting appropriate
+                visualisations and presenting key performance measures
+                in a clear format.
+            </p>
+
+            <br>
+
+            <p>
+                I also developed my understanding of how dashboards can
+                be used to explore different dimensions of a dataset,
+                identify patterns and communicate insights that can
+                support data-driven decision-making.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <a href="index.html">
+            ← Back to Portfolio
+        </a>
+
+    </footer>
+
+
+</body>
+
+</html>
