@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,6 +23,7 @@
             line-height: 1.6;
         }
 
+
         /* Navigation */
 
         nav {
@@ -37,9 +39,8 @@
         }
 
         nav .logo {
-            font-size: 28px;
+            font-size: 22px;
             font-weight: bold;
-            color: #222;
         }
 
         nav .links {
@@ -50,207 +51,245 @@
         nav a {
             text-decoration: none;
             color: #222;
-            font-size: 18px;
-            transition: 0.2s;
+            font-weight: 500;
         }
 
         nav a:hover {
-            color: #a54bd4;
+            color: #9b4dcc;
         }
 
-        /* Hero */
 
-        .hero {
+        /* Page Header */
+
+        .page-header {
             background: #ffffff;
-            padding: 80px 7%;
+            padding: 65px 7% 55px;
         }
 
-        .hero h1 {
-            font-size: 56px;
-            margin-bottom: 15px;
+        .page-header h1 {
+            font-size: 52px;
+            margin-bottom: 8px;
         }
 
-        .hero .subtitle {
-            color: #a54bd4;
-            font-size: 30px;
-            margin-bottom: 25px;
+        .page-header .subtitle {
+            font-size: 25px;
+            color: #9b4dcc;
+            margin-bottom: 28px;
         }
 
-        .hero p {
-            font-size: 21px;
-            max-width: 1000px;
+        .objective {
+            max-width: 850px;
+            font-size: 18px;
+            color: #555;
         }
 
-        /* General sections */
+        .objective strong {
+            color: #222;
+        }
+
+
+        /* General Sections */
 
         section {
-            padding: 70px 7%;
+            padding: 60px 7%;
         }
 
-        section:nth-of-type(even) {
-            background: #ffffff;
-        }
-
-        h2 {
-            font-size: 42px;
-            margin-bottom: 25px;
-        }
-
-        h3 {
-            font-size: 30px;
-            margin-bottom: 18px;
-        }
-
-        p {
-            font-size: 19px;
-            margin-bottom: 20px;
+        .section-container {
             max-width: 1100px;
+            margin: auto;
         }
+
+        section h2 {
+            font-size: 34px;
+            margin-bottom: 22px;
+        }
+
+        section h3 {
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+
+        section p {
+            color: #555;
+            font-size: 17px;
+        }
+
+
+        /* Project Overview */
+
+        .overview {
+            background: #f7f7f9;
+        }
+
+        .overview p {
+            max-width: 900px;
+        }
+
 
         /* Skills */
 
-        .skills-container {
+        .skills-section {
+            background: #ffffff;
+        }
+
+        .skills {
             display: flex;
             flex-wrap: wrap;
-            gap: 14px;
+            gap: 12px;
             margin-top: 25px;
         }
 
         .skill {
-            background: #f0e2f8;
-            color: #7f35a8;
-            padding: 12px 22px;
-            border-radius: 30px;
+            background: #f0e5f7;
+            color: #7b35a3;
+            padding: 10px 17px;
+            border-radius: 20px;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 14px;
         }
+
 
         /* Projects */
 
-        .project {
+        .projects {
+            background: #f7f7f9;
+        }
+
+        .project-card {
             background: #ffffff;
-            padding: 45px;
-            margin-top: 45px;
+            padding: 32px;
             border-radius: 10px;
-            border-left: 5px solid #a54bd4;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            border: 1px solid #e5e5e5;
+            margin-bottom: 40px;
         }
 
         .project-number {
-            color: #a54bd4;
+            color: #9b4dcc;
             font-weight: bold;
-            font-size: 19px;
-            text-transform: uppercase;
-            margin-bottom: 10px;
+            font-size: 14px;
+            margin-bottom: 8px;
         }
 
-        .project h3 {
-            font-size: 34px;
-        }
-
-        .project-intro {
-            font-size: 20px;
-        }
-
-        /* Information blocks */
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-            margin-top: 35px;
-        }
-
-        .info-card {
-            background: #f7f7f9;
-            padding: 30px;
-            border-radius: 8px;
-        }
-
-        .info-card h4 {
-            font-size: 22px;
+        .project-card h3 {
+            font-size: 25px;
             margin-bottom: 15px;
         }
 
-        .info-card p {
-            font-size: 18px;
-            margin-bottom: 0;
+        .project-description {
+            margin-bottom: 25px;
+            max-width: 900px;
         }
+
+
+        /* Dashboard Preview */
+
+        .dashboard-preview {
+            margin-top: 25px;
+        }
+
+        .dashboard-preview img {
+            width: 100%;
+            display: block;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+
+
+        /* Dashboard Button */
+
+        .dashboard-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 22px;
+            background: #9b4dcc;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .dashboard-button:hover {
+            background: #7b35a3;
+        }
+
 
         /* Findings */
 
-        .findings {
+        .finding {
             background: #ffffff;
-            padding: 30px;
-            margin-top: 35px;
-            border-left: 5px solid #a54bd4;
+            border-left: 4px solid #9b4dcc;
+            padding: 20px 24px;
+            margin-top: 25px;
         }
 
-        .findings h4 {
-            font-size: 22px;
-            margin-bottom: 15px;
+        .finding strong {
+            font-weight: 700;
         }
 
-        .findings ul {
-            padding-left: 25px;
+        .finding p {
+            font-size: 16px;
         }
 
-        .findings li {
-            font-size: 18px;
-            margin-bottom: 12px;
+
+        /* Key Insights */
+
+        .insights {
+            background: #ffffff;
         }
 
-        /* Images */
-
-        .dashboard-image {
-            width: 100%;
-            max-width: 1400px;
-            display: block;
-            margin: 35px auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 18px rgba(0,0,0,0.10);
-        }
-
-        /* Buttons */
-
-        .button-container {
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
             margin-top: 30px;
         }
 
-        .button {
-            display: inline-block;
-            background: #a54bd4;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 14px 25px;
-            border-radius: 7px;
-            font-weight: bold;
-            font-size: 17px;
-            transition: 0.2s;
+        .insight-card {
+            background: #f7f7f9;
+            padding: 28px;
+            border-radius: 10px;
+            border: 1px solid #e5e5e5;
         }
 
-        .button:hover {
-            background: #8f3cba;
+        .insight-card h3 {
+            margin-bottom: 10px;
         }
+
+        .insight-card p {
+            font-size: 16px;
+        }
+
+
+        /* What I Learned */
+
+        .learning {
+            background: #f7f7f9;
+        }
+
+        .learning p {
+            max-width: 900px;
+        }
+
 
         /* Footer */
 
         footer {
-            background: #222;
-            color: #ffffff;
+            background: #ffffff;
             text-align: center;
             padding: 35px;
-            margin-top: 0;
+            border-top: 1px solid #e5e5e5;
         }
 
-        footer p {
-            margin: 0 auto;
-            font-size: 15px;
+        footer a {
+            color: #9b4dcc;
+            text-decoration: none;
+            font-weight: bold;
         }
+
 
         /* Mobile */
 
-        @media (max-width: 800px) {
+        @media (max-width: 700px) {
 
             nav {
                 flex-direction: column;
@@ -263,32 +302,31 @@
                 gap: 15px;
             }
 
-            .hero h1 {
-                font-size: 42px;
+            .page-header h1 {
+                font-size: 38px;
             }
 
-            .hero .subtitle {
-                font-size: 25px;
+            .page-header .subtitle {
+                font-size: 22px;
             }
 
-            h2 {
-                font-size: 34px;
-            }
-
-            .info-grid {
+            .insight-grid {
                 grid-template-columns: 1fr;
             }
 
-            .project {
-                padding: 25px;
+            .project-card {
+                padding: 24px;
             }
 
         }
 
     </style>
+
 </head>
 
+
 <body>
+
 
     <!-- Navigation -->
 
@@ -299,20 +337,22 @@
         </div>
 
         <div class="links">
+
             <a href="index.html">Home</a>
             <a href="excel.html">Excel</a>
             <a href="tableau.html">Tableau</a>
             <a href="powerbi.html">Power BI</a>
             <a href="sql.html">SQL</a>
             <a href="python.html">Python</a>
+
         </div>
 
     </nav>
 
 
-    <!-- Hero -->
+    <!-- Page Header -->
 
-    <div class="hero">
+    <header class="page-header">
 
         <h1>Tableau</h1>
 
@@ -320,144 +360,275 @@
             Interactive Data Visualisation & Dashboard Development
         </div>
 
-        <p>
-            After developing my foundations in Excel, I progressed into Tableau
-            to explore interactive data visualisation and dashboard development.
-            I used Tableau to transform datasets into visual insights and
-            explore patterns, trends and relationships within the data.
+        <p class="objective">
+
+            <strong>Objective:</strong>
+            Analyse datasets using Tableau to identify patterns,
+            trends and relationships through interactive dashboards
+            and visualisations.
+
         </p>
 
-    </div>
+    </header>
 
 
-    <!-- Skills -->
+    <!-- Project Overview -->
 
-    <section>
+    <section class="overview">
 
-        <h2>Skills Learned</h2>
+        <div class="section-container">
 
-        <p>
-            Through these projects, I developed practical skills in creating
-            interactive dashboards, analysing datasets and communicating
-            findings through visualisations.
-        </p>
+            <h2>Project Overview</h2>
 
-        <div class="skills-container">
+            <p>
+                As part of my Level 3 Data Technician training, I used
+                Tableau to analyse datasets and create interactive
+                dashboards to explore patterns, trends and relationships
+                within the data.
+            </p>
 
-            <div class="skill">Tableau</div>
-            <div class="skill">Data Visualisation</div>
-            <div class="skill">Dashboard Development</div>
-            <div class="skill">Data Analysis</div>
-            <div class="skill">Data Interpretation</div>
-            <div class="skill">Interactive Filters</div>
-            <div class="skill">Data Storytelling</div>
+            <br>
+
+            <p>
+                I developed dashboards using a range of visualisation
+                techniques, including bar charts, scatter plots, line
+                charts and other interactive visualisations to communicate
+                findings clearly.
+            </p>
 
         </div>
 
     </section>
 
 
-    <!-- PROJECT 1 -->
+    <!-- Skills Learned -->
 
-    <section>
+    <section class="skills-section">
 
-        <div class="project">
+        <div class="section-container">
 
-            <div class="project-number">
-                01 · Spotify Features Analysis
-            </div>
+            <h2>Skills Learned</h2>
 
-            <h3>
-                Exploring Music Popularity & Track Characteristics
-            </h3>
-
-            <p class="project-intro">
-                I used Tableau to analyse a Spotify dataset and explore
-                patterns in music popularity, genres, artists and track
-                characteristics.
+            <p>
+                Through these projects, I developed practical skills in
+                analysing datasets, creating interactive dashboards and
+                communicating findings through visualisations.
             </p>
 
 
-            <div class="info-grid">
+            <div class="skills">
 
-                <div class="info-card">
+                <span class="skill">Tableau</span>
 
-                    <h4>Dataset & Data Used</h4>
+                <span class="skill">Data Visualisation</span>
+
+                <span class="skill">Dashboard Development</span>
+
+                <span class="skill">Data Analysis</span>
+
+                <span class="skill">Data Interpretation</span>
+
+                <span class="skill">Interactive Filters</span>
+
+                <span class="skill">Data Storytelling</span>
+
+                <span class="skill">Trend Analysis</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+
+    <section class="projects">
+
+        <div class="section-container">
+
+            <h2>Tableau Projects</h2>
+
+            <p>
+                The following projects demonstrate how I used Tableau
+                to analyse different datasets and communicate insights
+                through interactive dashboards.
+            </p>
+
+
+            <!-- Project 1 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    01 · MUSIC DATA ANALYSIS
+                </div>
+
+                <h3>
+                    Spotify Features Analysis
+                </h3>
+
+                <p class="project-description">
+                    I used Tableau to analyse Spotify data and explore
+                    relationships between music popularity, genre,
+                    danceability, track characteristics and artist
+                    performance.
+                </p>
+
+
+                <div class="finding">
+
+                    <strong>What the data shows</strong>
 
                     <p>
-                        The dataset contained information about Spotify tracks,
-                        including genre, popularity, track duration,
-                        danceability, acousticness and energy, alongside
-                        artist-level information.
+                        The dashboard explores which genres and artists
+                        have the highest popularity, as well as how
+                        characteristics such as danceability, duration,
+                        energy and acousticness relate to music popularity.
                     </p>
 
                 </div>
 
-
-                <div class="info-card">
-
-                    <h4>What I Analysed</h4>
-
-                    <p>
-                        I compared popularity across genres and artists and
-                        explored relationships between popularity and track
-                        characteristics such as duration and danceability.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="findings">
-
-                <h4>What the Data Shows</h4>
-
-                <ul>
-
-                    <li>
-                        Pop had the highest overall aggregated popularity
-                        within the genres shown, followed by Rap and Rock.
-                    </li>
-
-                    <li>
-                        Drake had the highest popularity value among the
-                        artists displayed in the artist analysis.
-                    </li>
-
-                    <li>
-                        The duration analysis suggests that longer tracks
-                        were not automatically more popular, with considerable
-                        variation in popularity across track lengths.
-                    </li>
-
-                    <li>
-                        The dashboard also allowed popularity to be compared
-                        against average danceability and examined track
-                        characteristics such as acousticness and energy.
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <img
-                src="images/spotify-tableau.png"
-                alt="Spotify Features Analysis Tableau dashboard"
-                class="dashboard-image"
-            >
-
-
-            <div class="button-container">
 
                 <a
+                    class="dashboard-button"
                     href="https://public.tableau.com/app/profile/sabrin.yussuf6019/viz/SpotifyFeaturesAnalysis_17864529802660/Dashboard1"
-                    class="button"
                     target="_blank"
                 >
-                    View Interactive Dashboard →
+                    View Spotify Dashboard →
                 </a>
+
+            </div>
+
+
+            <!-- Project 2 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    02 · GLOBAL HEALTH DATA ANALYSIS
+                </div>
+
+                <h3>
+                    Global Health Data Analysis
+                </h3>
+
+                <p class="project-description">
+                    I used Tableau to analyse global health data and
+                    investigate differences in life expectancy,
+                    population, cancer types and health-related
+                    measures across countries and continents.
+                </p>
+
+
+                <div class="finding">
+
+                    <strong>What the data shows</strong>
+
+                    <p>
+                        The dashboard compares life expectancy across
+                        continents, explores cancer prevalence by country,
+                        examines population by gender and investigates
+                        relationships between life expectancy and other
+                        health measures.
+                    </p>
+
+                </div>
+
+
+                <a
+                    class="dashboard-button"
+                    href="https://public.tableau.com/app/profile/sabrin.yussuf6019/viz/GlobalHealthDataAnalysis/Dashboard1"
+                    target="_blank"
+                >
+                    View Global Health Dashboard →
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Key Insights -->
+
+    <section class="insights">
+
+        <div class="section-container">
+
+            <h2>Key Insights</h2>
+
+            <p>
+                The Tableau projects demonstrated how interactive
+                visualisations can be used to identify patterns and
+                communicate findings clearly.
+            </p>
+
+
+            <div class="insight-grid">
+
+
+                <div class="insight-card">
+
+                    <h3>
+                        Interactive Analysis
+                    </h3>
+
+                    <p>
+                        Tableau allowed me to explore datasets
+                        interactively and examine different aspects
+                        of the data through filters and visualisations.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <h3>
+                        Data Visualisation
+                    </h3>
+
+                    <p>
+                        I used different chart types to present
+                        information clearly and make patterns and
+                        relationships within the data easier to identify.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <h3>
+                        Identifying Patterns
+                    </h3>
+
+                    <p>
+                        The dashboards helped me identify trends,
+                        differences and relationships across categories,
+                        countries, genres and other variables.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <h3>
+                        Communicating Findings
+                    </h3>
+
+                    <p>
+                        I developed my ability to turn analytical
+                        results into clear visual insights that can
+                        support understanding and decision-making.
+                    </p>
+
+                </div>
+
 
             </div>
 
@@ -466,119 +637,32 @@
     </section>
 
 
-    <!-- PROJECT 2 -->
+    <!-- What I Learned -->
 
-    <section>
+    <section class="learning">
 
-        <div class="project">
+        <div class="section-container">
 
-            <div class="project-number">
-                02 · Global Health Data Analysis
-            </div>
+            <h2>What I Learned</h2>
 
-            <h3>
-                Exploring Global Health & Population Trends
-            </h3>
-
-            <p class="project-intro">
-                I used Tableau to explore global health and demographic data,
-                creating visualisations to compare life expectancy,
-                population, cancer measures and relationships between
-                health indicators.
+            <p>
+                These projects strengthened my ability to analyse
+                datasets and communicate information using Tableau.
+                I developed practical experience creating dashboards,
+                selecting appropriate visualisations and using
+                interactive features to explore data.
             </p>
 
+            <br>
 
-            <div class="info-grid">
-
-                <div class="info-card">
-
-                    <h4>Dataset & Data Used</h4>
-
-                    <p>
-                        The dataset contained global health information across
-                        different countries and years, including life
-                        expectancy, population, gender, cancer measures and
-                        BMI-related data.
-                    </p>
-
-                </div>
-
-
-                <div class="info-card">
-
-                    <h4>What I Analysed</h4>
-
-                    <p>
-                        I compared life expectancy across continents, explored
-                        population by gender, examined cancer measures across
-                        countries and analysed changes in life expectancy over
-                        time.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="findings">
-
-                <h4>What the Data Shows</h4>
-
-                <ul>
-
-                    <li>
-                        Europe had the highest average life expectancy among
-                        the continents shown, while Africa had the lowest.
-                    </li>
-
-                    <li>
-                        The population by gender visualisation showed a
-                        relatively balanced split, with the female population
-                        slightly higher than the male population in the
-                        displayed data.
-                    </li>
-
-                    <li>
-                        Cancer measures varied considerably between countries,
-                        with China showing the highest values among the
-                        countries displayed in the comparison.
-                    </li>
-
-                    <li>
-                        Life expectancy showed an overall upward trend between
-                        1992 and 2008 across the countries represented in the
-                        trend analysis.
-                    </li>
-
-                    <li>
-                        The BMI and life expectancy visualisation allowed the
-                        relationship between the two measures to be explored
-                        across selected countries and demographic groups.
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <img
-                src="images/global-health-tableau.png"
-                alt="Global Health Data Analysis Tableau dashboard"
-                class="dashboard-image"
-            >
-
-
-            <div class="button-container">
-
-                <a
-                    href="https://public.tableau.com/app/profile/sabrin.yussuf6019/viz/GlobalHealthDataAnalysis/Dashboard1"
-                    class="button"
-                    target="_blank"
-                >
-                    View Interactive Dashboard →
-                </a>
-
-            </div>
+            <p>
+                I also developed my ability to move beyond simply
+                presenting data and instead use visualisations to
+                identify meaningful patterns, trends and relationships.
+                This helped me understand how data visualisation can
+                make complex information easier to interpret and
+                communicate.
+            </p>
 
         </div>
 
@@ -589,11 +673,12 @@
 
     <footer>
 
-        <p>
-            © 2026 Sabrin Y · Data Analyst Portfolio
-        </p>
+        <a href="index.html">
+            ← Back to Portfolio
+        </a>
 
     </footer>
+
 
 </body>
 
