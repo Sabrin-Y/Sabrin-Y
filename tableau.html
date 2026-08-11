@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tableau | Sabirn Y</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f7f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+
+        nav {
+            background: #ffffff;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e5e5;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #222;
+        }
+
+        nav .links {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #a54bd4;
+        }
+
+        /* Hero */
+
+        .hero {
+            background: #ffffff;
+            padding: 80px 7%;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 15px;
+        }
+
+        .hero .subtitle {
+            color: #a54bd4;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            max-width: 1000px;
+        }
+
+        /* General sections */
+
+        section {
+            padding: 70px 7%;
+        }
+
+        section:nth-of-type(even) {
+            background: #ffffff;
+        }
+
+        h2 {
+            font-size: 42px;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            font-size: 19px;
+            margin-bottom: 20px;
+            max-width: 1100px;
+        }
+
+        /* Skills */
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 25px;
+        }
+
+        .skill {
+            background: #f0e2f8;
+            color: #7f35a8;
+            padding: 12px 22px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Projects */
+
+        .project {
+            background: #ffffff;
+            padding: 45px;
+            margin-top: 45px;
+            border-radius: 10px;
+            border-left: 5px solid #a54bd4;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+
+        .project-number {
+            color: #a54bd4;
+            font-weight: bold;
+            font-size: 19px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .project h3 {
+            font-size: 34px;
+        }
+
+        .project-intro {
+            font-size: 20px;
+        }
+
+        /* Information blocks */
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .info-card {
+            background: #f7f7f9;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .info-card h4 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .info-card p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        /* Findings */
+
+        .findings {
+            background: #ffffff;
+            padding: 30px;
+            margin-top: 35px;
+            border-left: 5px solid #a54bd4;
+        }
+
+        .findings h4 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .findings ul {
+            padding-left: 25px;
+        }
+
+        .findings li {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        /* Images */
+
+        .dashboard-image {
+            width: 100%;
+            max-width: 1400px;
+            display: block;
+            margin: 35px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+        }
+
+        /* Buttons */
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #a54bd4;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 25px;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 17px;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #8f3cba;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #222;
+            color: #ffffff;
+            text-align: center;
+            padding: 35px;
+            margin-top: 0;
+        }
+
+        footer p {
+            margin: 0 auto;
+            font-size: 15px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav .links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero .subtitle {
+                font-size: 25px;
+            }
+
+            h2 {
+                font-size: 34px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project {
+                padding: 25px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            Sabirn Y
+        </div>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="excel.html">Excel</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="powerbi.html">Power BI</a>
+            <a href="sql.html">SQL</a>
+            <a href="python.html">Python</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Hero -->
+
+    <div class="hero">
+
+        <h1>Tableau</h1>
+
+        <div class="subtitle">
+            Interactive Data Visualisation & Dashboard Development
+        </div>
+
+        <p>
+            After developing my foundations in Excel, I progressed into Tableau
+            to explore interactive data visualisation and dashboard development.
+            I used Tableau to transform datasets into visual insights and
+            explore patterns, trends and relationships within the data.
+        </p>
+
+    </div>
+
+
+    <!-- Skills -->
+
+    <section>
+
+        <h2>Skills Learned</h2>
+
+        <p>
+            Through these projects, I developed practical skills in creating
+            interactive dashboards, analysing datasets and communicating
+            findings through visualisations.
+        </p>
+
+        <div class="skills-container">
+
+            <div class="skill">Tableau</div>
+            <div class="skill">Data Visualisation</div>
+            <div class="skill">Dashboard Development</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">Data Interpretation</div>
+            <div class="skill">Interactive Filters</div>
+            <div class="skill">Data Storytelling</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT 1 -->
+
+    <section>
+
+        <div class="project">
+
+            <div class="project-number">
+                01 · Spotify Features Analysis
+            </div>
+
+            <h3>
+                Exploring Music Popularity & Track Characteristics
+            </h3>
+
+            <p class="project-intro">
+                I used Tableau to analyse a Spotify dataset and explore
+                patterns in music popularity, genres, artists and track
+                characteristics.
+            </p>
+
+
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <h4>Dataset & Data Used</h4>
+
+                    <p>
+                        The dataset contained information about Spotify tracks,
+                        including genre, popularity, track duration,
+                        danceability, acousticness and energy, alongside
+                        artist-level information.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <h4>What I Analysed</h4>
+
+                    <p>
+                        I compared popularity across genres and artists and
+                        explored relationships between popularity and track
+                        characteristics such as duration and danceability.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="findings">
+
+                <h4>What the Data Shows</h4>
+
+                <ul>
+
+                    <li>
+                        Pop had the highest overall aggregated popularity
+                        within the genres shown, followed by Rap and Rock.
+                    </li>
+
+                    <li>
+                        Drake had the highest popularity value among the
+                        artists displayed in the artist analysis.
+                    </li>
+
+                    <li>
+                        The duration analysis suggests that longer tracks
+                        were not automatically more popular, with considerable
+                        variation in popularity across track lengths.
+                    </li>
+
+                    <li>
+                        The dashboard also allowed popularity to be compared
+                        against average danceability and examined track
+                        characteristics such as acousticness and energy.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <img
+                src="images/spotify-tableau.png"
+                alt="Spotify Features Analysis Tableau dashboard"
+                class="dashboard-image"
+            >
+
+
+            <div class="button-container">
+
+                <a
+                    href="https://public.tableau.com/app/profile/sabrin.yussuf6019/viz/SpotifyFeaturesAnalysis_17864529802660/Dashboard1"
+                    class="button"
+                    target="_blank"
+                >
+                    View Interactive Dashboard →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT 2 -->
+
+    <section>
+
+        <div class="project">
+
+            <div class="project-number">
+                02 · Global Health Data Analysis
+            </div>
+
+            <h3>
+                Exploring Global Health & Population Trends
+            </h3>
+
+            <p class="project-intro">
+                I used Tableau to explore global health and demographic data,
+                creating visualisations to compare life expectancy,
+                population, cancer measures and relationships between
+                health indicators.
+            </p>
+
+
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <h4>Dataset & Data Used</h4>
+
+                    <p>
+                        The dataset contained global health information across
+                        different countries and years, including life
+                        expectancy, population, gender, cancer measures and
+                        BMI-related data.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <h4>What I Analysed</h4>
+
+                    <p>
+                        I compared life expectancy across continents, explored
+                        population by gender, examined cancer measures across
+                        countries and analysed changes in life expectancy over
+                        time.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="findings">
+
+                <h4>What the Data Shows</h4>
+
+                <ul>
+
+                    <li>
+                        Europe had the highest average life expectancy among
+                        the continents shown, while Africa had the lowest.
+                    </li>
+
+                    <li>
+                        The population by gender visualisation showed a
+                        relatively balanced split, with the female population
+                        slightly higher than the male population in the
+                        displayed data.
+                    </li>
+
+                    <li>
+                        Cancer measures varied considerably between countries,
+                        with China showing the highest values among the
+                        countries displayed in the comparison.
+                    </li>
+
+                    <li>
+                        Life expectancy showed an overall upward trend between
+                        1992 and 2008 across the countries represented in the
+                        trend analysis.
+                    </li>
+
+                    <li>
+                        The BMI and life expectancy visualisation allowed the
+                        relationship between the two measures to be explored
+                        across selected countries and demographic groups.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <img
+                src="images/global-health-tableau.png"
+                alt="Global Health Data Analysis Tableau dashboard"
+                class="dashboard-image"
+            >
+
+
+            <div class="button-container">
+
+                <a
+                    href="https://public.tableau.com/app/profile/sabrin.yussuf6019/viz/GlobalHealthDataAnalysis/Dashboard1"
+                    class="button"
+                    target="_blank"
+                >
+                    View Interactive Dashboard →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Sabirn Y · Data Analyst Portfolio
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
