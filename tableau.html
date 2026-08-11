@@ -149,17 +149,22 @@
         }
 
 
-        /* Projects */
+        /* Tableau Projects */
 
         .projects {
             background: #f7f7f9;
         }
 
+        .projects-intro {
+            max-width: 900px;
+            margin-bottom: 35px;
+        }
+
         .project-card {
             background: #ffffff;
-            padding: 32px;
-            border-radius: 10px;
             border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            padding: 32px;
             margin-bottom: 40px;
         }
 
@@ -176,40 +181,19 @@
         }
 
         .project-description {
-            margin-bottom: 25px;
             max-width: 900px;
+            margin-bottom: 28px;
         }
 
 
-        /* Dashboard Preview */
+        /* Dashboard Screenshots */
 
-        .dashboard-preview {
-            margin-top: 25px;
-        }
-
-        .dashboard-preview img {
+        .dashboard-image {
             width: 100%;
             display: block;
+            margin-top: 28px;
             border-radius: 6px;
             border: 1px solid #ddd;
-        }
-
-
-        /* Dashboard Button */
-
-        .dashboard-button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 22px;
-            background: #9b4dcc;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        .dashboard-button:hover {
-            background: #7b35a3;
         }
 
 
@@ -228,6 +212,25 @@
 
         .finding p {
             font-size: 16px;
+            margin-top: 8px;
+        }
+
+
+        /* Dashboard Button */
+
+        .dashboard-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 22px;
+            background: #9b4dcc;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .dashboard-button:hover {
+            background: #7b35a3;
         }
 
 
@@ -382,7 +385,7 @@
 
             <p>
                 As part of my Level 3 Data Technician training, I used
-                Tableau to analyse datasets and create interactive
+                Tableau to analyse datasets and develop interactive
                 dashboards to explore patterns, trends and relationships
                 within the data.
             </p>
@@ -390,10 +393,9 @@
             <br>
 
             <p>
-                I developed dashboards using a range of visualisation
-                techniques, including bar charts, scatter plots, line
-                charts and other interactive visualisations to communicate
-                findings clearly.
+                I used a range of visualisation techniques to present
+                data clearly and communicate findings through interactive
+                dashboards.
             </p>
 
         </div>
@@ -411,10 +413,9 @@
 
             <p>
                 Through these projects, I developed practical skills in
-                analysing datasets, creating interactive dashboards and
+                creating interactive dashboards, analysing datasets and
                 communicating findings through visualisations.
             </p>
-
 
             <div class="skills">
 
@@ -441,7 +442,7 @@
     </section>
 
 
-    <!-- Projects -->
+    <!-- Tableau Projects -->
 
     <section class="projects">
 
@@ -449,10 +450,10 @@
 
             <h2>Tableau Projects</h2>
 
-            <p>
-                The following projects demonstrate how I used Tableau
-                to analyse different datasets and communicate insights
-                through interactive dashboards.
+            <p class="projects-intro">
+                I applied the skills developed during my training to
+                different datasets, using Tableau to create interactive
+                visualisations and communicate analytical findings.
             </p>
 
 
@@ -469,11 +470,19 @@
                 </h3>
 
                 <p class="project-description">
-                    I used Tableau to analyse Spotify data and explore
-                    relationships between music popularity, genre,
-                    danceability, track characteristics and artist
-                    performance.
+                    I analysed Spotify data to explore patterns in music
+                    popularity, genre, danceability, track characteristics
+                    and artist performance.
                 </p>
+
+
+                <!-- Spotify Dashboard Screenshot -->
+
+                <img
+                    class="dashboard-image"
+                    src="images/tableau-spotify.png"
+                    alt="Tableau Spotify Features Analysis dashboard"
+                >
 
 
                 <div class="finding">
@@ -482,7 +491,7 @@
 
                     <p>
                         The dashboard explores which genres and artists
-                        have the highest popularity, as well as how
+                        have the highest popularity and examines how
                         characteristics such as danceability, duration,
                         energy and acousticness relate to music popularity.
                     </p>
@@ -495,7 +504,7 @@
                     href="https://public.tableau.com/app/profile/sabrin.yussuf6019/viz/SpotifyFeaturesAnalysis_17864529802660/Dashboard1"
                     target="_blank"
                 >
-                    View Spotify Dashboard →
+                    View Interactive Dashboard →
                 </a>
 
             </div>
@@ -514,11 +523,19 @@
                 </h3>
 
                 <p class="project-description">
-                    I used Tableau to analyse global health data and
-                    investigate differences in life expectancy,
-                    population, cancer types and health-related
-                    measures across countries and continents.
+                    I analysed global health data to investigate differences
+                    in life expectancy, population, cancer types and other
+                    health-related measures across countries and continents.
                 </p>
+
+
+                <!-- Global Health Dashboard Screenshot -->
+
+                <img
+                    class="dashboard-image"
+                    src="images/tableau-health.png"
+                    alt="Tableau Global Health Data Analysis dashboard"
+                >
 
 
                 <div class="finding">
@@ -527,7 +544,7 @@
 
                     <p>
                         The dashboard compares life expectancy across
-                        continents, explores cancer prevalence by country,
+                        continents, explores cancer types by country,
                         examines population by gender and investigates
                         relationships between life expectancy and other
                         health measures.
@@ -541,7 +558,7 @@
                     href="https://public.tableau.com/app/profile/sabrin.yussuf6019/viz/GlobalHealthDataAnalysis/Dashboard1"
                     target="_blank"
                 >
-                    View Global Health Dashboard →
+                    View Interactive Dashboard →
                 </a>
 
             </div>
@@ -579,7 +596,7 @@
                     <p>
                         Tableau allowed me to explore datasets
                         interactively and examine different aspects
-                        of the data through filters and visualisations.
+                        of the data using filters and visualisations.
                     </p>
 
                 </div>
@@ -594,7 +611,7 @@
                     <p>
                         I used different chart types to present
                         information clearly and make patterns and
-                        relationships within the data easier to identify.
+                        relationships easier to identify.
                     </p>
 
                 </div>
@@ -608,8 +625,8 @@
 
                     <p>
                         The dashboards helped me identify trends,
-                        differences and relationships across categories,
-                        countries, genres and other variables.
+                        differences and relationships across different
+                        categories, countries, genres and variables.
                     </p>
 
                 </div>
